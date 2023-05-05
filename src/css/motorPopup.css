@@ -1,0 +1,128 @@
+.pop-cont {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+}
+
+.pop-box {
+    background: #1F1E25;
+    border-radius: 13.8254px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pop-head {
+    display: flex;
+    margin-top: 35.12px;
+    margin-left: 26.75px;
+    margin-right: 29.75px;
+    margin-bottom: 55.88px;
+}
+
+.pop-head>img {
+    margin-top: 5px;
+}
+
+.pop-head>h4 {
+    width: 174px;
+    height: 40px;
+    margin-left: 10.03px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 29.1855px;
+    line-height: 40px;
+
+    color: #FFFFFF;
+}
+
+.pop-head>button {
+    width: 54px;
+    height: 54px;
+    background: url(../img/closeButton.png);
+    margin-top: -7px;
+    margin-left: 393.44px;
+    border: none;
+    transition: all 0.2s ease;
+}
+
+.pop-head>button:hover {
+    transition: all 0.2s ease;
+    scale: 1.05;
+}
+
+.pop-head>button:active {
+    transition: all 0.2s ease;
+    scale: 0.95;
+
+}
+
+.pop-card {
+    width: 670px;
+    height: 115px;
+
+    margin-left: 26.75px;
+    background: #262630;
+    border-radius: 9.21697px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.card-stats {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    justify-self: center;
+}
+
+.stat-one {
+    display: flex;
+    min-width: 140px;
+}
+
+.stat-txt {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.stat-txt>h6 {
+    width: 90px;
+    height: 23px;
+    margin-left: 5.6px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18.4339px;
+    line-height: 23px;
+
+    color: #FFFFFF;
+}
+
+.stat-txt>p {
+    width: 140px;
+    height: 19px;
+    margin-left: 5.6px;
+    margin-top: -4px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14.7471px;
+    line-height: 19px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+}

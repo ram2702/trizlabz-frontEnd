@@ -1,0 +1,257 @@
+.pop-cont {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+}
+
+.pop-box {
+    height: fit-content;
+    background: #1F1E25;
+    border-radius: 13.8254px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pop-head {
+    display: flex;
+    margin-top: 35.12px;
+    margin-left: 26.75px;
+    margin-right: 29.75px;
+    margin-bottom: 25.88px;
+}
+
+.pop-head>img {
+    margin-top: 5px;
+}
+
+.pop-head>h4 {
+    width: 224px;
+    height: 40px;
+    margin-left: 10.03px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 29.1855px;
+    line-height: 40px;
+
+    color: #FFFFFF;
+}
+
+.pop-head>button {
+    width: 54px;
+    height: 54px;
+    background: url(../img/closeButton.png);
+    margin-top: -7px;
+    margin-left: 343.44px;
+    border: none;
+    transition: all 0.2s ease;
+}
+
+.pop-head>button:hover {
+    transition: all 0.2s ease;
+    scale: 1.05;
+}
+
+.pop-head>button:active {
+    transition: all 0.2s ease;
+    scale: 0.95;
+
+}
+
+.pop-card {
+    width: 670px;
+    margin-bottom: 15.94px;
+    max-height: 11vh;
+    margin-left: 26.75px;
+    margin-right: 26.75px;
+    background: #262630;
+    border-radius: 9.21697px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+
+.card-stats {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    justify-self: center;
+}
+
+.stat-one {
+    display: flex;
+    min-width: 140px;
+}
+
+.stat-txt {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.stat-txt>h6 {
+    width: 90px;
+    height: 23px;
+    margin-left: 5.6px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18.4339px;
+    line-height: 23px;
+
+    color: #FFFFFF;
+}
+
+.stat-txt>p {
+    width: 140px;
+    height: 19px;
+    margin-left: 5.6px;
+    margin-top: -4px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14.7471px;
+    line-height: 19px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+}
+
+.last-stat {
+    justify-content: flex-start;
+    margin-left: 4%;
+}
+
+.last-stat>span {
+    margin-right: 4%;
+}
+
+.pop-tag {
+    display: flex;
+    flex-direction: row;
+    margin-left: 4%;
+    margin-top: 35.88px;
+    margin-bottom: 20px;
+    height: 35px;
+
+    cursor: pointer;
+}
+
+.tag-items {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+}
+
+.rail {
+    margin-right: 5%;
+    background: #262630;
+    border-radius: 10px;
+    padding: 1% 2%;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.subsys {
+    margin-right: 5%;
+    background: #262630;
+    border-radius: 10px;
+    padding: 1% 2%;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.bms {
+    margin-right: 5%;
+    background: #262630;
+    border-radius: 10px;
+    padding: 1% 2%;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.railTag {
+    z-index: 99;
+    width: 664px;
+    align-self: center;
+    height: 153px;
+    border-radius: 10px;
+    background: #262630;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 6px;
+
+}
+
+.railTag>p {
+    margin-left: 3%;
+    padding: 10px 20px;
+    height: fit-content;
+    text-align: center;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    color: #FFFFFF;
+    background: #262630;
+    border: 2px solid #09AF54;
+    box-shadow: 0px 0px 13px rgba(9, 175, 84, 0.5);
+    border-radius: 10px;
+    margin-right: 40px;
+}
+
+.subTag>p {
+    margin-left: 9px;
+    padding: 7.5px 15px;
+}
+
+.bmstag>p {
+    margin-left: 5px;
+    padding: 7.5px 15px;
+
+}
+
+.border {
+    margin-top: 30px;
+    height: 60px;
+    margin-right: 5%;
+    background: #262630;
+    border-radius: 10px 10px 0px 0px;
+    padding: 1% 2%;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    transition: all 0.2s ease;
+    scale: 0.95;
+
+    color: white;
+}

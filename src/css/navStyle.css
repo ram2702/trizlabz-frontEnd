@@ -1,0 +1,135 @@
+.nav-cont {
+    min-width: fit-content;
+    min-height: max-content;
+    margin: 0;
+    padding: 0 2% 0 2%;
+    background-color: #16151A;
+    border: 2px solid #1F1F23;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-items {
+    padding-left: 5%;
+}
+
+.trizlabz-logo {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.nav-card {
+
+    margin-bottom: 46.56px;
+    z-index: 1;
+    /* display: flex;
+    justify-content: flex-start; */
+}
+
+
+.nav-content {
+    display: flex;
+    cursor: pointer;
+    width: fit-content;
+
+}
+
+.nav-logo {
+
+    margin-right: 10.75px;
+}
+
+.nav-txt {
+
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: #FFFFFF7F;
+    line-height: 1.75rem;
+
+    text-align: center;
+
+}
+
+.nav-txt:hover {
+    color: #FD841F;
+
+}
+
+.nav-content:active,
+.sub-content>li:active {
+    transition: all 0.2s ease;
+    scale: 0.95;
+    fill: #FFBF1A;
+}
+
+
+.nav-content:hover {
+    fill: #FD841F;
+    stroke: #FD841F;
+}
+
+.mon-logo {
+    color: rgba(255, 255, 255, 0.459);
+}
+
+
+.color-alt {
+    color: #FD841F;
+}
+
+.sub-content {
+    text-decoration: none;
+    list-style: none;
+    width: 100%;
+    margin-top: 21px;
+    margin-left: 1.5rem;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: rgba(255, 255, 255, 0.5);
+
+}
+
+.sub-content>li {
+    margin-bottom: 11px;
+    width: 85%;
+    transition: all 0.02s ease;
+    padding-left: 5%;
+    padding-top: 3%;
+    padding-right: 5%;
+    padding-bottom: 3%;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.sub-content>li:hover {
+    margin-bottom: 11px;
+    border: 1px solid #FD841F;
+    padding-left: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: #FD841F;
+    color: #16151A;
+
+}
+
+.highlight {
+    margin-bottom: 11px;
+    border: 1px solid #FD841F;
+    padding-left: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: #FD841F;
+    color: #16151A;
+}
+
+.adm {}

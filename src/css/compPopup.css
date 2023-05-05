@@ -1,0 +1,147 @@
+.comp-pop-cont {
+
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+}
+
+.comp-pop-box {
+    background: #1F1E25;
+    border-radius: 13.8254px;
+    display: flex;
+    flex-direction: column;
+}
+
+.comp-pop-head {
+    display: flex;
+    margin-top: 35.12px;
+    margin-left: 26.75px;
+    margin-right: 29.75px;
+    margin-bottom: 28px;
+}
+
+.comp-pop-head>img {
+    margin-top: 5px;
+}
+
+.comp-pop-head>h4 {
+    width: 174px;
+    height: 40px;
+    margin-left: 10.03px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 29.1855px;
+    line-height: 40px;
+
+    color: #FFFFFF;
+}
+
+.comp-pop-head>button {
+    width: 54px;
+    height: 54px;
+    background: url(../img/closeButton.png);
+    margin-top: -7px;
+    margin-left: 393.44px;
+    border: none;
+    transition: all 0.2s ease;
+}
+
+.comp-pop-head>button:hover {
+    transition: all 0.2s ease;
+    scale: 1.05;
+}
+
+.comp-pop-head>button:active {
+    transition: all 0.2s ease;
+    scale: 0.95;
+
+}
+
+.comp-pop-card {
+    width: 670px;
+    height: 106px;
+    margin-bottom: 37.94px;
+    margin-left: 26.75px;
+    background: #262630;
+    border-radius: 9.21697px;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.comp-pop-card>h5 {
+    justify-self: start;
+
+    height: 27px;
+    margin-top: -12px;
+    margin-left: 27px;
+    margin-bottom: 25px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22.1207px;
+    /* identical to box height */
+    color: rgba(255, 255, 255, 0.5);
+
+
+}
+
+.comp-card-stats {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.comp-stat-one {
+    display: flex;
+    min-width: 90px;
+
+}
+
+.comp-stat-txt {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.comp-stat-txt>h6 {
+    width: 90px;
+    height: 23px;
+    margin-left: 5.6px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18.4339px;
+    line-height: 23px;
+
+    color: #FFFFFF;
+}
+
+.comp-stat-txt>p {
+    width: 90px;
+    height: 19px;
+    margin-left: 5.6px;
+    margin-top: -4px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14.7471px;
+    line-height: 19px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+}

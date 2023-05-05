@@ -1,0 +1,10 @@
+{
+  "realm": "3bf748e2-3d22-46b3-b29f-1aad2e7a33e6",
+  "url": "https://auth.cloud.kaaiot.com/auth/",
+  "ssl-required": "none",
+  "resource": "a655c062-0695-4bed-b9ed-d0cc7e1f690b",
+  "clientId": "a655c062-0695-4bed-b9ed-d0cc7e1f690b",
+  "publicClient": true,
+  "confidential-port": 0,
+  "enable-cors": true
+}
