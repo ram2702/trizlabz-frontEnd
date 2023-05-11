@@ -11,6 +11,7 @@ import Navbar from "./components/navbar";
 import Health from "./components/health.monitoring";
 import Administration from "./pages/administration";
 import Vehicle from "./components/vehicle.admin";
+import Setup from "./pages/setup";
 
 export default function App() {
   React.useEffect(() => {
@@ -34,6 +35,10 @@ export default function App() {
         <Route
           path="/administration/vehicle"
           element={<Administration props={"Vehicle"} />}
+        />
+        <Route
+          path="/setup/userManagement"
+          element={<Setup props={"userManagement"} />}
         />
       </Routes>
     </BrowserRouter>

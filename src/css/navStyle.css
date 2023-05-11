@@ -92,7 +92,6 @@
     font-family: 'Source Sans Pro';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
     line-height: 25px;
     color: rgba(255, 255, 255, 0.5);
 
@@ -101,6 +100,7 @@
 .sub-content>li {
     margin-bottom: 11px;
     width: 85%;
+    font-size: 0.9rem;
     transition: all 0.02s ease;
     padding-left: 5%;
     padding-top: 3%;

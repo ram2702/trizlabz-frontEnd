@@ -29,6 +29,9 @@ export default function Navbar({ props }) {
     if (props[0] === "Administration") {
       setNavVis([false, false, false, false, true, false]);
     }
+    if (props[0] === "setup") {
+      setNavVis([false, false, false, true, false, false]);
+    }
   }, []);
   function handleChange(arg, event) {
     if (arg === "Dash") setNavVis([true, false, false, false, false, false]);
@@ -36,6 +39,8 @@ export default function Navbar({ props }) {
       setNavVis([false, true, false, false, false, false]);
     else if (arg === "System")
       setNavVis([false, false, true, false, false, false]);
+    else if (arg === "setup")
+      setNavVis([false, false, false, true, false, false]);
     else if (arg === "Administration")
       setNavVis([false, false, false, false, true, false]);
     else if (arg === "TeleOp") navigate("/teleoperations");
@@ -43,6 +48,7 @@ export default function Navbar({ props }) {
     else if (arg === "customer") navigate("/administration/customer");
     else if (arg === "user") navigate("/administration/user");
     else if (arg === "vehicle") navigate("/administration/vehicle");
+    else if (arg === "userManagement") navigate("/setup/userManagement");
     else if (arg === "Home") navigate("/");
     console.log(navVis, arg);
   }
@@ -144,7 +150,7 @@ export default function Navbar({ props }) {
             </ol>
           )}
         </div>
-        <div className="nav-card">
+        <div className="nav-card" onClick={handleChange.bind(this, "setup")}>
           <span className="nav-content">
             <Setlogo
               fill={navVis[3] ? "#FD841F" : "#FFFFFF7F"}
@@ -156,11 +162,17 @@ export default function Navbar({ props }) {
           </span>
           {navVis[3] && (
             <ol className="sub-content">
-              <li>Health</li>
-              <li>Trends</li>
-              <li>Mission</li>
-              <li>Telementry Log</li>
-              <li>System Log</li>
+              <li
+                className={props[1] === "userManagement" ? "highlight" : ""}
+                onClick={handleChange.bind(this, "userManagement")}
+              >
+                User Management
+              </li>
+              <li>Deployment Management</li>
+              <li>Fleet Management</li>
+              <li>Vehicle Management</li>
+              <li>Mission Management</li>
+              <li>Map Management</li>
             </ol>
           )}
         </div>
