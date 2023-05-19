@@ -40,6 +40,11 @@ export default function App() {
           path="/setup/userManagement"
           element={<Setup props={"userManagement"} />}
         />
+        <Route
+          path="/setup/deployment"
+          element={<Setup props={"deployment"} />}
+        />
+        <Route path="/setup/fleet" element={<Setup props={"fleet"} />} />
       </Routes>
     </BrowserRouter>
   );

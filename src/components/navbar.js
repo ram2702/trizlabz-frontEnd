@@ -49,6 +49,8 @@ export default function Navbar({ props }) {
     else if (arg === "user") navigate("/administration/user");
     else if (arg === "vehicle") navigate("/administration/vehicle");
     else if (arg === "userManagement") navigate("/setup/userManagement");
+    else if (arg === "deployment") navigate("/setup/deployment");
+    else if (arg === "fleet") navigate("/setup/fleet");
     else if (arg === "Home") navigate("/");
     console.log(navVis, arg);
   }
@@ -168,8 +170,18 @@ export default function Navbar({ props }) {
               >
                 User Management
               </li>
-              <li>Deployment Management</li>
-              <li>Fleet Management</li>
+              <li
+                className={props[1] === "deployment" ? "highlight" : ""}
+                onClick={handleChange.bind(this, "deployment")}
+              >
+                Deployment Management
+              </li>
+              <li
+                className={props[1] === "fleet" ? "highlight" : ""}
+                onClick={handleChange.bind(this, "fleet")}
+              >
+                Fleet Management
+              </li>
               <li>Vehicle Management</li>
               <li>Mission Management</li>
               <li>Map Management</li>
