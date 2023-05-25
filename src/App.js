@@ -18,7 +18,7 @@ export default function App() {
     console.log(document.all);
   }, []);
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter basename="/trizlabz-frontEnd">
       <Routes>
         <Route index element={<Monitoring />} />
         <Route path="/monitoring/health" element={<Monitoring props={1} />} />
